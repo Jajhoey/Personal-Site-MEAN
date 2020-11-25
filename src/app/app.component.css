@@ -1,0 +1,154 @@
+div>h1 {
+  color: black;
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+
+}
+
+.dropdown-content>button:hover{
+  color: white;
+  background-color: grey;
+
+}
+
+button:focus{
+  outline: none;
+}
+
+button{
+  color: white;
+  display: block;
+  border: none;
+  background-color: #343a40;
+
+}
+
+
+.dropdown{
+  position:relative;
+  display: inline-block;
+}
+
+
+.dropdown:hover > .dropdown-content{
+  display: block;
+  background-color: #343a40;
+
+}
+
+.drop-button:hover{
+  border: none;
+  background-color: grey;
+  color: white;
+  border-radius: 10px 10px 10px 0px;
+}
+
+.drop-button:focus{
+  outline: none;
+
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  border-radius: 0px 0px 10px 0px;
+  padding-right: 5px;
+  width:110%;
+}
+
+.nav-item:hover > button{
+  background-color: grey;
+  border-radius: 10px 10px 10px 0px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+.aboutMe{
+  text-align: left;
+  font-size: 16pt;
+  margin-left: 20%;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+.aboutMe>div>p{
+  padding-top: 20%;
+}
+
+.myPhoto > img{
+  border-radius: 60%;
+  width: 500px;
+}
+
+.footer>a>img{
+  width: 50px;
+  border-radius: 50%;
+  grid-column-gap: 10px;
+}
+
+.footer{
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.grid-item1 {
+  grid-area: header;
+}
+
+.grid-item2{
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-bottom: 30px;
+  grid-area: left-h;
+}
+
+
+.grid-item3 {
+  grid-area: left;
+  margin-left: 30%;
+
+}
+
+.grid-item4 {
+  grid-area: left;
+  margin-top: 150px;
+  padding-left: 30%;
+
+}
+
+.grid-item5 {
+  grid-area: right;
+
+}
+
+.grid-item6 {
+  margin-top: 150px;
+  grid-area: right;
+}
+
+.item-info{
+  padding-right: 15%;
+}
+
+.grid-container>div{
+  color: black;
+  font-size: 14pt;
+}
+
+.grid-container{
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-areas:
+    'header header header header'
+    'left-h left-h right-h right-h'
+    'left left right right'
+    'footer footer footer footer';
+}
