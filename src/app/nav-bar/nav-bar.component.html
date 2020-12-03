@@ -3,11 +3,11 @@
     <li class = "nav-item"><button class = "nav-link font-weight-bold" routerLink="/">Home</button>
     <li class = "nav-item">
       <div class="dropdown">
-        <button (click) = "onNavClick()" class="nav-link active drop-button" routerLink="/about">Skills/Education</button>
+        <button class="nav-link active drop-button" routerLink="/about-skills">Skills/Education</button>
         <div class="dropdown-content">
-          <button>Technical Skills</button>
-          <button>Relevant Courses</button>
-          <button>Education</button>
+          <button routerLink="/about-skills">Technical Skills</button>
+          <button routerLink="/about-courses">Relevant Courses</button>
+          <button routerLink="/about-edu">Education</button>
         </div>
       </div>
     </li>

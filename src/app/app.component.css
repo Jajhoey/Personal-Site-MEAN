@@ -6,6 +6,11 @@ div>h1 {
 
 }
 
+.bg-card{
+  background-color: ;
+  background-size: 200px 100px;
+}
+
 .dropdown-content>button:hover{
   color: white;
   background-color: grey;
@@ -66,10 +71,6 @@ button{
   color: white;
 }
 
-.hidden{
-  display: none;
-}
-
 .aboutMe{
   text-align: left;
   font-size: 16pt;
@@ -87,16 +88,29 @@ button{
   width: 500px;
 }
 
-.footer>a>img{
+.grid-container>.footer>img{
   width: 50px;
   border-radius: 50%;
   grid-column-gap: 10px;
 }
 
-.footer{
+.gitLogo{
   text-align: center;
-  margin-left: 50%;
-  margin-right: 50%;
+  grid-area: footer;
+  padding-left: 5%;
+
+}
+
+.linkedInLogo{
+  text-align: center;
+  grid-area: footer;
+  padding-right: 5%;
+}
+
+.grid-container > .project{
+  margin-top: 5%;
+  text-align: center;
+  grid-area: center;
 }
 
 .grid-item1 {
@@ -149,6 +163,7 @@ button{
   grid-template-areas:
     'header header header header'
     'left-h left-h right-h right-h'
+    'center center center center '
     'left left right right'
     'footer footer footer footer';
 }
