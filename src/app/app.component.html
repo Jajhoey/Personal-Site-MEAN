@@ -1,4 +1,12 @@
 <nav-bar></nav-bar>
+<div  [hidden]="this.router.url === '/' || this.router.url === '/projects'" class="skills-heading  grid-container">
+  <div class="grid-item1"><h1>Skills and Relevant Courses</h1></div>
+</div>
+
+<div [hidden]="this.router.url !== '/projects'" class="grid-item1">
+  <h1>My Previous Projects</h1>
+</div>
+
 <div class="bg-card">
   <div [hidden]="this.router.url !== '/'"  class="aboutMe grid-container">
     <div class="myPhoto">
