@@ -9,9 +9,8 @@ div>h1 {
 .bg-card{
   background-color: #F0E6D6;
   border-radius: 5px;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 10%;
   box-shadow: 5px 10px 10px 5px;
 }
@@ -75,22 +74,29 @@ button{
   color: white;
 }
 
+.project>a>img{
+  padding-bottom: 10%;
+}
+
 .aboutMe{
   text-align: left;
   font-size: 16pt;
   margin-top: 10%;
-  font-weight: bold;
 }
 
-.aboutMe>div>p{
-  padding-top: 20%;
+.bio{
+  padding-top: 25%;
+  padding-bottom: 10%;
+  margin-left: 10%;
 }
 
 .myPhoto > img{
   border-radius: 60%;
-  width: 400px;
-  margin-left: 5%;
-  margin-top: 5%
+  width: 100%;
+  margin-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
 }
 
 .grid-container>.footer>img{
@@ -184,4 +190,17 @@ button{
     'center center center center '
     'left left right right'
     'footer footer footer footer';
+}
+
+@media only screen and (max-width: 1000px) {
+  .myPhoto{
+    grid-area: header;
+    margin-right: 15%;
+  }
+  .bio{
+    margin-right: 10%;
+    grid-area: center;
+  }
+  .project>a>img{
+  }
 }
