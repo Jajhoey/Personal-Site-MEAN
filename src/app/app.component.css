@@ -226,12 +226,12 @@ button{
   .skills>.grid-item5{
     grid-area: left;
     margin-left: 15%;
-    margin-top: 100px;
+    margin-top: 75px;
   }
 
   .skills>.grid-item6{
     grid-area: left;
-    margin-top: 125px;
+    margin-top: 150px;
     margin-left: 15%;
   }
 
