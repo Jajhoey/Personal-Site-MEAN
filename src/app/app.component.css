@@ -87,13 +87,13 @@ button{
 .bio{
   padding-top: 25%;
   padding-bottom: 10%;
-  margin-left: 10%;
 }
 
 .myPhoto > img{
   border-radius: 60%;
-  width: 100%;
-  margin-left: 10%;
+  width: 400px;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 10%;
   padding-bottom: 10%;
 
@@ -108,14 +108,14 @@ button{
 .gitLogo{
   text-align: center;
   grid-area: footer;
-  padding-left: 5%;
+  margin-left: 5%;
 
 }
 
 .linkedInLogo{
   text-align: center;
   grid-area: footer;
-  padding-right: 5%;
+  margin-right: 5%;
 }
 
 .grid-container > .project{
@@ -132,7 +132,6 @@ button{
   margin-top: 50px;
   margin-bottom: 30px;
   margin-left: 10%;
-
   grid-area: left-h;
 }
 
@@ -145,31 +144,37 @@ button{
 
 .grid-item4 {
   grid-area: left;
-  margin-top: 30%;
   margin-left: 30%;
 }
 
-.courses>.grid-item4 {
-  grid-area: left;
-  margin-top: 50%;
-  margin-left: 30%;
-}
+
 
 .grid-item5 {
+  margin-right: 15%;
+  grid-area: right;
+}
+
+.grid-item6 {
   margin-right: 15%;
   grid-area: right;
 
 }
 
-.grid-item6 {
-  margin-top: 50%;
-  grid-area: right;
+.skills>.grid-item4 {
+  padding-top: 200px;
+}
+
+.skills>.grid-item6 {
+  padding-top: 200px;
 
 }
 
-.courses>.grid-item6 {
-  margin-top: 50%;
+.courses>.grid-item4 {
+  padding-top: 250px;
+}
 
+.courses>.grid-item6 {
+  padding-top: 250px;
 }
 
 .item-info{
@@ -195,12 +200,87 @@ button{
 @media only screen and (max-width: 1000px) {
   .myPhoto{
     grid-area: header;
-    margin-right: 15%;
+    text-align: center;
   }
+
+  .myPhoto>img{
+    width: 90%;
+  }
+
   .bio{
     margin-right: 10%;
+    margin-left: 10%;
     grid-area: center;
   }
-  .project>a>img{
+
+  .skills>.grid-item3{
+    margin-left: 15%;
+
   }
+
+  .skills>.grid-item4{
+    margin-left: 15%;
+
+  }
+
+  .skills>.grid-item5{
+    grid-area: left;
+    margin-left: 15%;
+    margin-top: 100px;
+  }
+
+  .skills>.grid-item6{
+    grid-area: left;
+    margin-top: 125px;
+    margin-left: 15%;
+  }
+
+  .courses>.grid-item3{
+    grid-area: center;
+    margin-left: 20%;
+  }
+
+  .courses>.grid-item4{
+    grid-area: center;
+    margin-top: 350px;
+    margin-left: 20%;
+
+  }
+
+  .courses>.grid-item5{
+    grid-area: center;
+    margin-left: 20%;
+    margin-top: 200px;
+
+  }
+
+  .courses>.grid-item6{
+    margin-left: 20%;
+    margin-top: 600px;
+    grid-area: center;
+  }
+
+  .project>a>img{
+    width: 70%;
+  }
+
+  .bg-card{
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  .gitLogo{
+    margin-left: 15%;
+
+  }
+
+  .linkedInLogo{
+    margin-right: 15%;
+  }
+
+  .navbar{
+    font-size: 8pt;
+  }
+
+
 }
