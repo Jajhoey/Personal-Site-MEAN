@@ -1,6 +1,6 @@
 div>h1 {
   color: black;
-  margin-top: 50px;
+  margin-top: 80px;
   display: block;
   text-align: center;
 
@@ -72,6 +72,7 @@ button{
 
 .nav-link {
   color: white;
+  font-size: 14pt;
 }
 
 .project>a>img{
