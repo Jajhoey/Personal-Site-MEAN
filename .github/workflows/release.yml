@@ -1,8 +1,10 @@
 name: ReleaseCI
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  puLL_request:
+    branches: [main]
+
 jobs:
   build:
     runs-on: ubuntu-latest
