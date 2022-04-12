@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutSkillsComponent } from './about-skills/about-skills.component';
 import { AboutCoursesComponent } from './about-courses/about-courses.component';
 import { AboutEduComponent } from './about-edu/about-edu.component';
@@ -16,9 +16,9 @@ import { AboutEduComponent } from './about-edu/about-edu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [routingComponents],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
