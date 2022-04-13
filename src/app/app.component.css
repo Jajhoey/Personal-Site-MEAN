@@ -111,14 +111,14 @@ button{
 .gitLogo{
   text-align: center;
   grid-area: footer2;
-  margin-left: 5%;
-
+  margin-right: 50%;
 }
 
 .linkedInLogo{
   text-align: center;
   grid-area: footer1;
-  margin-right: 5%;
+  margin-left: 50%;
+
 }
 
 .grid-container > .project{
@@ -225,6 +225,7 @@ button{
 
   .myPhoto>img{
     width: 90%;
+    margin-top: 10%;
   }
 
   .bio{
