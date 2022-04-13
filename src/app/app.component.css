@@ -96,7 +96,13 @@ button{
 
 }
 
-.grid-container>.footer>img{
+.grid-container>.footer1>img{
+  width: 50px;
+  border-radius: 50%;
+  grid-column-gap: 10px;
+}
+
+.grid-container>.footer2>img{
   width: 50px;
   border-radius: 50%;
   grid-column-gap: 10px;
@@ -104,14 +110,14 @@ button{
 
 .gitLogo{
   text-align: center;
-  grid-area: footer;
+  grid-area: footer2;
   margin-left: 5%;
 
 }
 
 .linkedInLogo{
   text-align: center;
-  grid-area: footer;
+  grid-area: footer1;
   margin-right: 5%;
 }
 
@@ -208,7 +214,7 @@ button{
     'left-h left-h right-h right-h'
     'center center center center '
     'left left right right'
-    'footer footer footer footer';
+    'footer1 footer1 footer2 footer2';
 }
 
 @media only screen and (max-width: 1000px) {
