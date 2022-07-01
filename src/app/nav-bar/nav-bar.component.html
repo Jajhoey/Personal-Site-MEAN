@@ -1,9 +1,9 @@
-<nav class = "navbar bg-dark navbar-expand fixed-top">
+<nav class = "navbar navbar-expand fixed-top">
   <ul class = "navbar-nav">
-    <li class = "nav-item"><button class = "nav-link font-weight-bold" routerLink="/">Home</button>
+    <li [ngClass] = "this.router.url === '/' ? 'active' : ''" class = "nav-item"><button class = "nav-link" routerLink="/">Home</button>
     <li class = "nav-item">
       <div class="dropdown">
-        <button class="nav-link active drop-button" routerLink="/about-skills">Skills/Education</button>
+        <button [ngClass] = "this.router.url === '/about-skills' || this.router.url === '/about-courses' || this.router.url === '/about-edu' ? 'active' : ''" class="nav-link drop-button" routerLink="/about-skills">Skills/Education</button>
         <div class="dropdown-content">
           <button routerLink="/about-skills">Technical Skills</button>
           <button routerLink="/about-courses">Relevant Courses</button>
@@ -11,6 +11,6 @@
         </div>
       </div>
     </li>
-    <li class = "nav-item"><button class = "nav-link" routerLink="/projects">Personal Projects</button></li>
+    <li  [ngClass] = "this.router.url === '/projects' ? 'active' : ''"  class = "nav-item"><button class = "nav-link" routerLink="/projects">Personal Projects</button></li>
   </ul>
 </nav>

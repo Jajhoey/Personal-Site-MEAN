@@ -11,6 +11,7 @@ import { Router, Routes } from '@angular/router';
 
 export class AppComponent {
   title = 'mean-personal-site';
+  isActive = true;
   constructor(public router: Router){
   }
 }
